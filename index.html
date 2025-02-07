@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .nav-title {
+            flex: 1;
+            text-align: center;
+            color: rgb(245, 242, 242);
+            font-size: 1.8em;
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropbtn {
+            background-color: #333;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .logo {
+            height: 40px;
+            margin-left: auto;
+        }
+        .highlight {
+            color: #ff6600;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        h1 span {
+            font-size: 2.5em;
+        }
+        p {
+            font-size: 1.2em;
+            width: 80%;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="dropdown">
+            <button class="dropbtn">☰</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="service.html">Service</a>
+                <a href="contact us.html">Contact</a>
+            </div>
+        </div>
+        <div class="nav-title">EditKaro.in</div>  
+        <img src="images/website logo edit.jpg" alt="Logo" class="logo"> <!-- Replace with your logo URL -->
+    </div>
+    <div class="content">
+        <h1><span>Welcome to </span><span class="highlight"><br>EditKaro.in</span></h1>
+        <p>EditKaro.in: The ultimate platform for effortless online content editing and collaboration.
+        Unlock your creative potential with powerful tools and real-time teamwork.
+        Transform your content into perfection with ease, anywhere, anytime.</p><br>
+        <p>Whether you're a writer, designer, developer, or content creator, EditKaro.in provides an intuitive and user-friendly interface to streamline your workflow.
+        With advanced editing features, seamless file sharing, and multi-user collaboration, our platform ensures that your projects are always in sync.
+        Experience the next level of digital content refinement with EditKaro.in – where creativity meets efficiency.</p><br>
+        <p>Our mission is to empower individuals and teams by offering cutting-edge tools that simplify the content creation and editing process.
+        Whether you're working on a personal project or collaborating with a team, EditKaro.in adapts to your needs, making content editing faster, smarter, and more effective.
+        Join thousands of users who trust EditKaro.in to bring their ideas to life.</p>
+    </div>
+    <footer>
+        <p>&copy; 2025 EditKaro.in. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
